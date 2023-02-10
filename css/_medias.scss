@@ -1,0 +1,83 @@
+@media (min-width:600px) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 45.75rem;
+        height: 100%;
+        border-radius: 18px;
+        padding: 0rem 2rem 0rem 2rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        // background-color: aqua;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        &__notifbox {
+            gap: .78rem;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            font-weight: $fontweight800;
+            color: $very-dark-blue;
+        }
+
+        &__markall {
+            font-size: 1rem;
+        }
+    }
+
+
+    .card {
+        position: relative;
+
+        &__box {
+            padding: 1.2rem 0 1.2rem 0;
+            margin-top: .5rem; 
+        }
+
+        &__p {
+            margin-left: .55rem;
+        }
+
+        &__action {
+            font-size: 1rem;
+        }
+
+        &__info {
+            font-size: 1rem;
+        }
+
+        
+        &__name {
+            font-size: 1rem;
+        }
+
+        &__date {
+            margin-left: .55rem;
+            font-size: .97rem;
+        }
+        &__text {
+            font-size: 1rem;
+            padding: 1rem;
+            margin: 0 .7rem 0 4.9rem;
+        }
+
+        &__avatarchess {
+            position: absolute;
+            right: 1.5rem;
+            width: 3rem;
+        }
+
+        &__avatar {
+            width: 2.8rem;
+        }
+    }
+}

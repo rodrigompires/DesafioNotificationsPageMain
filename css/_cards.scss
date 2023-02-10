@@ -1,0 +1,124 @@
+.card {
+    width: 100%;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem; 
+        border-radius: 7px;
+        padding: .8rem .7rem .8rem 0rem;
+        gap: .69rem;
+        cursor: pointer;       
+    }
+
+    .unread {
+        background-color: $very-light-grayish-blue;
+    }
+
+    .unread &__p::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        background-color: $red;
+        border-radius: 50%
+    }
+
+    &__avatar {
+        width: 2.5rem;
+        margin-left: 1rem;
+    }
+
+    &__name {
+        font-weight: $fontweight800;
+        font-size: .88rem;
+        color: $very-dark-blue;
+
+        &:hover {
+            cursor: pointer;
+            color: $blue;
+        }
+    }
+
+    &__action {
+        margin-left: .23rem;
+        font-size: .88rem;
+        color: $dark-grayish-blue;
+    }
+
+    &__info {
+        margin-left: .23rem;
+        font-weight: $fontweight800;
+        font-size: .865rem;
+        color: $dark-grayish-blue;
+
+        &:hover {
+            cursor: pointer;
+            color: $blue;
+        }
+    }
+
+    &__date {
+        font-size: .86rem;
+        color: $grayish-blue;
+        display: inline-block;
+    }
+
+    &__message {
+        display: flex;
+        align-items: center;
+        margin-right: .8rem;
+        margin-bottom: 1.4rem;
+    }
+
+    &__text {
+        font-size: .87rem;
+        color: $dark-grayish-blue;
+        padding: 1rem;
+        border: 1px solid $light-grayish-blue-2;
+        border-radius: .3rem;
+        margin: 0 0 0 4.2rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $light-grayish-blue-1;
+            border: 1px solid $light-grayish-blue-1;
+        }
+    }
+
+    &__avatarchess {
+        width: 2.5rem;
+        border: 2px solid transparent;
+        border-radius: 7px;
+
+        &:hover {
+            cursor: pointer;
+            border: 2px solid $light-grayish-blue-1;
+        }
+    }
+  
+}
+
+.card:hover .card__box {
+    filter: blur(1.01px);
+}
+
+.card .card__box:hover {
+    animation: cardbox 1s linear infinite;
+    filter: blur(0px);
+}
+
+
+@keyframes cardbox {
+    0% {
+        transform: scale(1);
+
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}

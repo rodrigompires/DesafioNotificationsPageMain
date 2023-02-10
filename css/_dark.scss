@@ -1,0 +1,68 @@
+body.dark {
+    background-color: $body-dark;
+
+    .container {
+        background-color: $container-dark;
+    }
+
+    .icons__icon {
+        color: $green;
+    }
+
+    .header {
+
+        &__notifications {
+            background-color: $orange;
+        }
+
+        &__title {
+            color: $pale-orange;
+        }
+
+        &__markall {
+            color: $pale-orange;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    .card {
+
+        &__box {
+            background-color: $container-dark;
+        }
+
+        .unread {
+            box-shadow: 1px 1px 5px 0px $pale-orange;
+        }
+
+
+        &__name {
+            color: $Orange;
+        }
+
+        &__text {
+            color: $pale-orange;
+            border: 1px solid transparent;
+
+            &:hover {
+                background-color: $container-dark;
+                box-shadow: 1px 1px 5px 0px $green;
+            }
+        }
+
+        &__action {
+            color: $pale-orange;
+        }
+
+        &__info {
+            color: $background-button;
+        }
+    }
+
+    .author__text {
+        color: $green;
+    }
+}

@@ -1,0 +1,87 @@
+[
+
+    {
+        "name": "Mark Webber",
+        "action": " reacted to your recent post",
+        "info": "My first tournament today!",
+        "src": "./assets/images/avatar-mark-webber.webp",
+        "time": "1m ago",
+        "message": "",
+        "src_picture_comment": "",
+        "unread": true
+    },
+
+    {
+        "name": "Angela Gray",
+        "action": " followed you",
+        "info": "",
+        "src": "./assets/images/avatar-angela-gray.webp",
+        "time": "5m ago",
+        "message": "",
+        "src_picture_comment": "",
+        "unread": true
+
+    },
+
+    {
+        "name": "Jacob Thompson",
+        "action": " has joined your group",
+        "info": "Chess Club",
+        "src": "./assets/images/avatar-jacob-thompson.webp",
+        "time": "1 day ago",
+        "message": "",
+        "src_picture_comment": "",
+        "unread": true
+
+    },
+
+    {
+        "name": "Rizky Hasanuddin",
+        "action": " sent you a private message",
+        "info": "",
+        "src": "./assets/images/avatar-rizky-hasanuddin.webp",
+        "time": "5 days ago",
+        "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+        "src_picture_comment": "",
+        "unread": false
+
+
+    },
+
+    {
+        "name": "Kimberly Smith",
+        "action": " commented on your picture",
+        "info": "",
+        "src": "./assets/images/avatar-kimberly-smith.webp",
+        "time": "1 week ago",
+        "message": "",
+        "src_picture_comment": "./assets/images/image-chess.webp",
+        "unread": false
+
+    },
+
+    {
+        "name": "Nathan Peterson",
+        "action": " reacted to your recent post",
+        "info": "5 end-game strategies to increase your win rate",
+        "src": "./assets/images/avatar-nathan-peterson.webp",
+        "time": "2 weeks ago",
+        "message": "",
+        "src_picture_comment": "",
+        "unread": false
+
+    },
+
+    {
+        "name": "Anna Kim",
+        "action": " left the group",
+        "info": "Chess Club",
+        "src": "./assets/images/avatar-anna-kim.webp",
+        "time": "2 weeks ago",
+        "message": "",
+        "src_picture_comment": "",
+        "unread": false
+
+    }
+
+]

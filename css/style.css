@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s linear;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+.container {
+  width: 23.44rem;
+  height: 100%;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 1rem;
+}
+
+.icons {
+  margin-left: 95%;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.5s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.5rem;
+}
+.header__notifbox {
+  display: flex;
+  gap: 0.5rem;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header__title {
+  font-size: 1.26rem;
+  font-weight: 800;
+  color: hsl(224deg, 21%, 14%);
+}
+.header__notifications {
+  background-color: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 7px;
+  padding: 0.1rem 0.7rem;
+  height: 1.6rem;
+  width: 2rem;
+}
+.header__markall {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: hsl(219deg, 12%, 42%);
+}
+.header__markall:hover {
+  cursor: pointer;
+  color: hsl(219deg, 85%, 26%);
+}
+
+.card {
+  width: 100%;
+}
+.card__box {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 7px;
+  padding: 0.8rem 0.7rem 0.8rem 0rem;
+  gap: 0.69rem;
+  cursor: pointer;
+}
+.card .unread {
+  background-color: hsl(210deg, 60%, 98%);
+}
+.unread .card__p::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+}
+.card__avatar {
+  width: 2.5rem;
+  margin-left: 1rem;
+}
+.card__name {
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: hsl(224deg, 21%, 14%);
+}
+.card__name:hover {
+  cursor: pointer;
+  color: hsl(219deg, 85%, 26%);
+}
+.card__action {
+  margin-left: 0.23rem;
+  font-size: 0.88rem;
+  color: hsl(219deg, 12%, 42%);
+}
+.card__info {
+  margin-left: 0.23rem;
+  font-weight: 800;
+  font-size: 0.865rem;
+  color: hsl(219deg, 12%, 42%);
+}
+.card__info:hover {
+  cursor: pointer;
+  color: hsl(219deg, 85%, 26%);
+}
+.card__date {
+  font-size: 0.86rem;
+  color: hsl(219deg, 14%, 63%);
+  display: inline-block;
+}
+.card__message {
+  display: flex;
+  align-items: center;
+  margin-right: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+.card__text {
+  font-size: 0.87rem;
+  color: hsl(219deg, 12%, 42%);
+  padding: 1rem;
+  border: 1px solid hsl(205deg, 33%, 90%);
+  border-radius: 0.3rem;
+  margin: 0 0 0 4.2rem;
+}
+.card__text:hover {
+  cursor: pointer;
+  background-color: hsl(211deg, 68%, 94%);
+  border: 1px solid hsl(211deg, 68%, 94%);
+}
+.card__avatarchess {
+  width: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 7px;
+}
+.card__avatarchess:hover {
+  cursor: pointer;
+  border: 2px solid hsl(211deg, 68%, 94%);
+}
+
+.card:hover .card__box {
+  filter: blur(1.01px);
+}
+
+.card .card__box:hover {
+  animation: cardbox 1s linear infinite;
+  filter: blur(0px);
+}
+
+@keyframes cardbox {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.footer__box {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__avatar {
+  width: 2.5rem;
+  margin-left: 1rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.author__text {
+  color: hsl(219deg, 85%, 26%);
+  font-size: 0.84rem;
+}
+
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: hsl(219deg, 85%, 26%);
+  line-height: 25px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.btn-flip:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #323237;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: #adadaf;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+  font-size: 0.6rem;
+}
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #adadaf;
+  display: block;
+  padding: 0 0;
+  line-height: 25px;
+  transition: 0.5s;
+  position: relative;
+  background: hsl(217deg, 54%, 11%);
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
+  font-size: 0.6rem;
+}
+
+body.dark {
+  background-color: hsl(207deg, 26%, 17%);
+}
+body.dark .container {
+  background-color: hsl(209deg, 23%, 22%);
+}
+body.dark .icons__icon {
+  color: #02B8AC;
+}
+body.dark .header__notifications {
+  background-color: hsl(26deg, 100%, 55%);
+}
+body.dark .header__title {
+  color: hsl(25deg, 100%, 94%);
+}
+body.dark .header__markall {
+  color: hsl(25deg, 100%, 94%);
+}
+body.dark .header__markall:hover {
+  color: hsl(26deg, 100%, 55%);
+}
+body.dark .card__box {
+  background-color: hsl(209deg, 23%, 24%);
+}
+body.dark .card .unread {
+  box-shadow: 1px 1px 5px 0px hsl(25deg, 100%, 94%);
+}
+body.dark .card__name {
+  color: hsl(26deg, 100%, 55%);
+}
+body.dark .card__text {
+  color: hsl(25deg, 100%, 94%);
+  border: 1px solid transparent;
+}
+body.dark .card__text:hover {
+  background-color: hsl(209deg, 23%, 24%);
+  box-shadow: 1px 1px 5px 0px #02B8AC;
+}
+body.dark .card__action {
+  color: hsl(25deg, 100%, 94%);
+}
+body.dark .card__info {
+  color: #adadaf;
+}
+body.dark .author__text {
+  color: #02B8AC;
+}
+
+@media (min-width: 600px) {
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 45.75rem;
+    height: 100%;
+    border-radius: 18px;
+    padding: 0rem 2rem 0rem 2rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .header__notifbox {
+    gap: 0.78rem;
+  }
+  .header__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: hsl(224deg, 21%, 14%);
+  }
+  .header__markall {
+    font-size: 1rem;
+  }
+  .card {
+    position: relative;
+  }
+  .card__box {
+    padding: 1.2rem 0 1.2rem 0;
+    margin-top: 0.5rem;
+  }
+  .card__p {
+    margin-left: 0.55rem;
+  }
+  .card__action {
+    font-size: 1rem;
+  }
+  .card__info {
+    font-size: 1rem;
+  }
+  .card__name {
+    font-size: 1rem;
+  }
+  .card__date {
+    margin-left: 0.55rem;
+    font-size: 0.97rem;
+  }
+  .card__text {
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0 0.7rem 0 4.9rem;
+  }
+  .card__avatarchess {
+    position: absolute;
+    right: 1.5rem;
+    width: 3rem;
+  }
+  .card__avatar {
+    width: 2.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */

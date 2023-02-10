@@ -1,0 +1,76 @@
+// Tipografia
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+$fontweight500: 500;
+$fontweight800: 800;
+$fontfamily: 'Plus Jakarta Sans', sans-serif;
+$fontsize: 16px;
+
+
+// Cores
+
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+$white: hsl(0, 0%, 100%);
+$very-light-grayish-blue: hsl(210, 60%, 98%);
+$light-grayish-blue-1: hsl(211, 68%, 94%);
+$light-grayish-blue-2: hsl(205, 33%, 90%);
+$grayish-blue: hsl(219, 14%, 63%);
+$dark-grayish-blue: hsl(219, 12%, 42%);
+$very-dark-blue: hsl(224, 21%, 14%);
+$body-dark: hsl(207, 26%, 17%);
+$container-dark: hsl(209, 23%, 22%);
+
+
+$color-button: #323237;
+$background-button: #adadaf;
+
+$orange: hsl(26, 100%, 55%);
+$pale-orange: hsl(25, 100%, 94%);
+$green: #02B8AC;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fontfamily;
+    font-size: $fontsize;
+    font-weight: $fontweight500;
+    transition: all .2s linear;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: $very-light-grayish-blue;
+    // min-width: 375px;
+    // max-width: 1440px;
+}
+
+.container {
+    width: 23.44rem;
+    height: 100%;
+    background-color: $white;
+    padding: 1rem;
+}
+
+.icons {
+    margin-left: 95%;
+    width: 2rem;
+    height: 2rem;
+    transition: all .5s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        transform: rotate(360deg);
+        cursor: pointer;
+    }
+}
+
+

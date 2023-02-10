@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+    // background-color: aqua;
+
+    &__notifbox {
+        display: flex;
+        gap: .5rem;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 1.26rem;
+        font-weight: $fontweight800;
+        color: $very-dark-blue;
+    }
+
+    &__notifications {
+        background-color: $blue;
+        color: $white;
+        border-radius: 7px;
+        padding: .1rem .7rem;
+        height: 1.6rem;
+        width: 2rem;
+    }
+
+    &__markall {
+        font-size: .88rem;
+        font-weight: $fontweight500;
+        color: $dark-grayish-blue;
+        
+        &:hover {
+            cursor: pointer;
+            color: $blue;
+        }
+    }
+}
